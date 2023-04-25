@@ -17,4 +17,9 @@ gcc version 10-win32 20220113 (GCC)
 #
 ``` 
 ## Helm
-TODO
+```sh
+helm repo add highcanfly https://helm-repo.highcanfly.club/
+helm repo update
+helm install --create-namespace --namespace dev buildw64 highcanfly/ubuntu-w64build
+helm uninstall --namespace dev buildw64
+``` 
